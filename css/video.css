@@ -1,0 +1,102 @@
+.gl_layout{
+	width: 100%;
+	min-width: 320px;
+	max-width: 640px;
+	background-color: #e3eefa;
+	margin: 0 auto;
+	height: auto;
+	overflow: hidden;
+}
+.gl_header_wrapper{
+	position: fixed;
+	width:100%;
+	left: 0;
+	top: 0;
+	z-index: 999;
+}
+.gl_header,.gl_footer{
+	width: 100%;
+	min-width: 320px;
+	max-width: 640px;
+	margin: 0 auto;
+	height: 55px;
+	1padding: 15px 0 0 10px;
+	background-color: #002a59;
+	position: relative;
+	box-shadow: 0 0 3px #868686;
+	color: #fff;
+	font-size: 10px;
+}
+.gl_header>div{position: absolute; top: 8px;}
+.gl_user{margin-left: 15px;}
+.user_pic{float: left;}
+.user_pic img{width: 40px; height: 40px; border-radius: 3px;}
+.user_txt{float: left; margin-left: 5px; line-height: 15px; margin-top: 5px;}
+.gl_tit{position: absolute; left: 125px; background: url(../img/logo.png) no-repeat; background-size: 40px 40px; padding-left: 40px; height: 40px; line-height: 40px; font-size: 16px;}
+.gl_header .gl_exit{right: 15px; top:18px}
+.gl_exit button{background: #a5c8ee; border: 1px solid #74aae6; color: #194f8b; border-radius: 3px; padding: 2px;}
+.gl_banner{ position: relative; top:55px;}
+
+/*搜索栏目*/
+.gl_video_menu{width: 100%; position: relative; top: 55px; }
+.gl_video_menu .v_menu{background: #efefef; height: 35px; line-height: 35px;overflow: hidden;}
+.gl_video_menu .v_menu li{float: left; width: 25%; text-align: center; } 
+.gl_video_menu .v_menu .cur{color: #0066CC;}
+
+.gl_video_menu .v_seach{ height: 40px; overflow: hidden; background: #fff;}
+.gl_video_menu .v_seach .search_input{width: 50%; background: #fff; border-radius: 5px; float: left; margin: 5px; padding-left: 40px; position: relative; height: 30px; border: 1px gainsboro solid;}
+.gl_video_menu .v_seach .search_input i{position: absolute;left: 25px; top: 7px;}
+.gl_video_menu .v_seach .search_input input{width: 80px; height: 27px; font-size: 12px;}
+.gl_video_menu .v_seach .v_visited{float: right; margin-right: 10%; line-height: 45px; color: #08a9c6;}
+
+/*视频列表*/
+/*.v_list{display: none;width: 80%; margin: 0 auto; position: relative; top: 70px; height: 850px;}*/
+.gl_vedio_list{width: 80%; margin: 0 auto; position: relative; top: 70px; height: 850px; display: none;}
+/*.gl_vedio_list:nth-child(1){display: block;}*/
+.gl_vedio_list>div{width: 47.5%; float: left; background: #00478d; border-radius: 5px; padding-bottom: 5px; box-shadow: 1px 1px 1px 1px #c6c6c6; margin-top: 15px;}
+.gl_vedio_list>div:nth-child(odd){margin-right: 15px;}
+.gl_vedio_list .v_list>div>img{border-radius: 5px 5px 0 0;}
+.gl_vedio_list .v_list>div>h2{font-size: 14px; color: #fff; padding-left: 5px;line-height: 30px;}
+.gl_vedio_list .v_list .count{text-align: right; padding-right: 5px; color: #a4a9b4; font-size: 10px;}
+.gl_vedio_list .v_list .count i{font-size: 10px; color: #5998d5;}
+.gl_vedio_list .v_list .content{color: #e3eefa; font-size: 10px; padding-left: 5px;}
+
+/*底部导航*/
+.gl_footer_wrapper{
+	position: fixed;
+	width:100%;
+	left: 0;
+	bottom: 0px;
+	z-index: 9999;
+
+}
+.gl_footer>div{float: left; text-align: center; width: 20%; margin-top: 8px;}
+.gl_footer>div>i{display: block; font-size: 23px;}
+.gl_footer .f_bbs i{font-size: 25px;}
+.gl_footer .f_user i{font-size: 24px;}
+.gl_footer .f_menu a{background: #478ede; width: 30px;  display: block;margin: 0 auto;  font-size: 26px;  line-height: 0; height: 30px; padding-top: 12px; color: #fff; border-radius: 5px; margin-top:5px ;}
+
+.pop_menu{position: absolute; height: 180px; background:rgba(255,255,255,.8);bottom: 55px; padding-top: 20px; padding-left: 8%; z-index: -5; display: none;}
+.pop_menu>div{float: left; width: 18%; text-align: center;}
+.pop_menu>div>a{color: #fff;}
+.pop_menu>div>a>span{color: #333;}
+.pop_menu>div>a>i{display: block; height: 35px; width: 35px; border-radius: 50%; line-height: 35px;margin: 0 auto;}
+.pop_menu .stu i{background: #ec5b2f;}
+.pop_menu .news i{background: #edca56;}
+.pop_menu .bbs i{background: #48b07d;}
+.pop_menu .diploma i{background: #aa1a71;}
+.pop_menu .video i{background: #999999;}
+.pop_menu .test i{background: #128ac7;}
+.pop_menu .exam i{background: #008479;}
+.pop_menu .vs i{background: #f3593d;}
+.pop_menu .teach i{background: #5e5246;}
+
+@media screen and (max-width: 320px) {
+
+	.user_txt{display: none;}
+    .gl_tit{position: absolute; left: 75px; background: url(../img/logo.png) no-repeat; background-size: 40px 40px; padding-left: 40px; height: 40px; line-height: 40px; font-size: 16px;}
+    .gl_column{ height: 500px; position: relative; top: 70px;left: 8.5%; width: 100%; font-size: 12px;}
+    .pop_menu{position: absolute; height: 180px; background:rgba(255,255,255,.8);bottom: 55px; padding-top: 20px; padding-left: 8%; z-index: -5; display: none; font-size: 12px;}
+    .gl_vedio_list>div:nth-child(odd){margin-right: 10px;}
+    .gl_video_menu .v_menu li{float: left; width: 25%; text-align: center; font-size: 10px;} 
+}

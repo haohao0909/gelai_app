@@ -1,0 +1,74 @@
+.gl_layout{
+	width: 100%;
+	min-width: 320px;
+	max-width: 640px;
+	background-color: #e3eefa;
+	margin: 0 auto;
+	height: auto;
+	overflow: hidden;
+}
+.gl_footer_wrapper{
+	position: fixed;
+	width:100%;
+	left: 0;
+	bottom: 0px;
+	z-index: 9999;
+
+}
+.gl_footer{
+	width: 100%;
+	min-width: 320px;
+	max-width: 640px;
+	margin: 0 auto;
+	height: 55px;
+	1padding: 15px 0 0 10px;
+	background-color: #002a59;
+	position: relative;
+	box-shadow: 0 0 3px #868686;
+	color: #fff;
+	font-size: 10px;
+}
+.gl_footer>div{float: left; text-align: center; width: 20%; margin-top: 8px;}
+.gl_footer>div>i{display: block; font-size: 23px;}
+.gl_footer .f_bbs i{font-size: 25px;}
+.gl_footer .f_user i{font-size: 24px;}
+.gl_footer .f_menu a{background: #478ede; width: 30px;  display: block;margin: 0 auto;  font-size: 26px;  line-height: 0; height: 30px; padding-top: 12px; color: #fff; border-radius: 5px; margin-top:5px ;}
+
+/*个人资料*/
+.gl_user{background: linear-gradient(#003876,#0259b9);padding-top: 40px; height: 240px; box-shadow: 0 1px 2px 1px #A4A9B4;}
+.gl_user .gl_user_head{width: 128px; height: 128px;border: 1px solid #fff; border-radius: 50%; margin: 0 auto ;}
+.gl_user .gl_user_head img{width: 120px; height: 120px; border-radius: 50%; margin: 3px;}
+.gl_user .gl_user_means{color: #fff; margin-top: 10px; overflow: hidden;}
+.gl_user .gl_user_means .gl_user_name{float: left; width: 60%;text-align: right;}
+.gl_user .gl_user_means .gl_user_level{float: left;width: 40%;}
+.gl_user .gl_user_means .gl_user_level span{background: #478EDE; padding: 0 3px; border-radius: 5px; margin-right: 3px;}
+.gl_user .gl_user_check{color: #fff; margin-top: 10px; overflow: hidden;}
+.gl_user .gl_user_check>div{float: left;width: 30%;}
+.gl_user .gl_user_check .mail_check{text-align: right; margin-right: 15%;width: 45%;}
+
+/*个人栏目*/
+.gl_user_menu{background: #fff; margin-top: 3px; height: 55px; overflow: hidden;}
+.gl_user_menu .u_menu li{float: left; line-height: 55px; width: 33%; text-align:center ; border-right: 1px solid #f0efef;}
+.gl_user_menu .u_menu li:last-child{border: none;}
+.gl_user_menu .u_menu li i{background: #2771c3; display: inline-block; width: 35px; height: 35px; line-height: 35px; color: #fff; border-radius: 50%; margin-right: 3px;}
+.gl_user_menu .u_menu .cur i{background: #6aaaf0;}
+
+/*栏目信息--个人资料*/
+.first{height: 580px;}
+.second{height: 430px;}
+.third{height: 515px;}
+.gl_user_list{display: none;}
+.user_specialty,.user_sign,.user_count,.user_note,.user_album{background: #fff; margin-top: 5px; border-bottom: 1px solid #f0efef; border-top: 1px solid #f0efef; line-height: 30px;font-size: 12px;}
+.user_specialty ul{width: 80%; margin: 0 auto; font-size: 12px;}
+.user_specialty ul span{color: #004b9e;}
+.user_specialty ul b,.user_sign b,.user_count b{color: #f00;}
+.user_sign h3,.user_note h3,.user_album h3{color: #004b9e; font-size: 14px; padding: 5px 10%;border-bottom: 1px solid #f0efef;}
+.user_sign li,.user_note li{border-bottom: 1px solid #f0efef; padding: 5px 10%; }
+.user_sign li strong,.user_album p span{color: #73a7e4;}
+.user_sign h4{color: #73a7e4; padding: 5px 10%;}
+.user_count h3{color: #004b9e; font-size: 14px; padding: 5px 10%;}
+.user_count p,.user_album p{padding: 0 10%;}
+.user_note li span{float: right;}
+.user_album ul{width: 80%; margin: 0 auto; overflow: hidden;}
+.user_album li{float: left; width: 45%; margin-bottom: 15px;}
+.user_album li:nth-child(odd){margin-right: 15px;}

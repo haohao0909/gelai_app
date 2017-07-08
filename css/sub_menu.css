@@ -1,0 +1,88 @@
+.gl_layout{
+	width: 100%;
+	min-width: 320px;
+	max-width: 640px;
+	background-color: #e3eefa;
+	margin: 0 auto;
+	height: auto;
+	overflow: hidden;
+}
+.gl_header_wrapper{
+	position: fixed;
+	width:100%;
+	left: 0;
+	top: 0;
+	z-index: 999;
+}
+.gl_header,.gl_footer{
+	width: 100%;
+	min-width: 320px;
+	max-width: 640px;
+	margin: 0 auto;
+	height: 55px;
+	1padding: 15px 0 0 10px;
+	background-color: #002a59;
+	position: relative;
+	box-shadow: 0 0 3px #868686;
+	color: #fff;
+	font-size: 10px;
+}
+.gl_header>div{position: absolute; top: 8px;}
+.gl_user{margin-left: 15px;}
+.user_pic{float: left;}
+.user_pic img{width: 40px; height: 40px; border-radius: 3px;}
+.user_txt{float: left; margin-left: 5px; line-height: 15px; margin-top: 5px;}
+.gl_tit{position: absolute; left: 125px; background: url(../img/logo.png) no-repeat; background-size: 40px 40px; padding-left: 40px; height: 40px; line-height: 40px; font-size: 16px;}
+.gl_header .gl_exit{right: 15px; top:18px}
+.gl_exit button{background: #a5c8ee; border: 1px solid #74aae6; color: #194f8b; border-radius: 3px; padding: 2px;}
+.gl_banner{ position: relative; top:55px;}
+
+/*子栏目*/
+.gl_sub_menu{width: 80%; position: relative; top: 70px; height: 500px; margin: 0 auto;}
+.gl_sub_menu a{color: #fff;}
+.gl_sub_menu .video{background: #002a59; height: 40px; width: 50%; line-height: 40px; text-align: center; border-radius: 5px; box-shadow: 1px 1px 1px 1px #999999;}
+.gl_sub_menu  i{margin-right: 10px;}
+.gl_sub_menu .test{background: #003f85; width: 80%; margin-left: 30px; line-height: 40px; padding-left: 30px;border-radius: 5px; box-shadow: 1px 1px 1px 1px #999999; margin-top: 20px;}
+.gl_sub_menu .exam{background: #0052a3; width: 80%; margin-left: 30px; line-height: 40px; padding-left: 30px;border-radius: 5px; box-shadow: 1px 1px 1px 1px #999999; margin-top: 20px;}
+.gl_sub_menu .vs{background: #0066cc; width: 80%; margin-left: 30px; line-height: 40px; padding-left: 30px;border-radius: 5px; box-shadow: 1px 1px 1px 1px #999999; margin-top: 20px;}
+.gl_sub_menu .teach{background: #478ede; width: 80%; margin-left: 30px; line-height: 40px; padding-left: 30px;border-radius: 5px; box-shadow: 1px 1px 1px 1px #999999; margin-top: 20px;}
+.gl_sub_menu div span{float: right; margin-right: 10px;}
+
+
+/*底部导航*/
+.gl_footer_wrapper{
+	position: fixed;
+	width:100%;
+	left: 0;
+	bottom: 0px;
+	z-index: 9999;
+
+}
+.gl_footer>div{float: left; text-align: center; width: 20%; margin-top: 8px;}
+.gl_footer>div>i{display: block; font-size: 23px;}
+.gl_footer .f_bbs i{font-size: 25px;}
+.gl_footer .f_user i{font-size: 24px;}
+.gl_footer .f_menu a{background: #478ede; width: 30px;  display: block;margin: 0 auto;  font-size: 26px;  line-height: 0; height: 30px; padding-top: 12px; color: #fff; border-radius: 5px; margin-top:5px ;}
+
+.pop_menu{position: absolute; height: 180px; background:rgba(255,255,255,.8);bottom: 55px; padding-top: 20px; padding-left: 8%; z-index: -5; display: none;}
+.pop_menu>div{float: left; width: 18%; text-align: center;}
+.pop_menu>div>a{color: #fff;}
+.pop_menu>div>a>span{color: #333;}
+.pop_menu>div>a>i{display: block; height: 35px; width: 35px; border-radius: 50%; line-height: 35px;margin: 0 auto;}
+.pop_menu .stu i{background: #ec5b2f;}
+.pop_menu .news i{background: #edca56;}
+.pop_menu .bbs i{background: #48b07d;}
+.pop_menu .diploma i{background: #aa1a71;}
+.pop_menu .video i{background: #999999;}
+.pop_menu .test i{background: #128ac7;}
+.pop_menu .exam i{background: #008479;}
+.pop_menu .vs i{background: #f3593d;}
+.pop_menu .teach i{background: #5e5246;}
+
+@media screen and (max-width: 320px) {
+
+	.user_txt{display: none;}
+    .gl_tit{position: absolute; left: 75px; background: url(../img/logo.png) no-repeat; background-size: 40px 40px; padding-left: 40px; height: 40px; line-height: 40px; font-size: 16px;}
+    .gl_column{ height: 500px; position: relative; top: 70px;left: 8.5%; width: 100%; font-size: 12px;}
+    .pop_menu{position: absolute; height: 180px; background:rgba(255,255,255,.8);bottom: 55px; padding-top: 20px; padding-left: 8%; z-index: -5; display: none; font-size: 12px;}
+}

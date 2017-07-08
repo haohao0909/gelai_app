@@ -1,0 +1,52 @@
+.gl_layout{
+	width: 100%;
+	min-width: 320px;
+	max-width: 640px;
+	background-color: #e3eefa;
+	margin: 0 auto;
+	height: auto;
+	overflow: hidden;
+}
+.gl_header_wrapper{
+	position: fixed;
+	width:100%;
+	left: 0;
+	top: 0;
+	z-index: 999;
+}
+.gl_header,.gl_footer{
+	width: 100%;
+	min-width: 320px;
+	max-width: 640px;
+	margin: 0 auto;
+	height: 55px;
+	1padding: 15px 0 0 10px;
+	background-color: #002a59;
+	position: relative;
+	box-shadow: 0 0 3px #868686;
+	color: #fff;
+	font-size: 10px;
+}
+.gl_header>div{position: absolute; top: 8px;}
+.gl_user{margin-left: 15px;}
+.user_pic{float: left;}
+.user_pic img{width: 40px; height: 40px; border-radius: 3px;}
+.user_txt{float: left; margin-left: 5px; line-height: 15px; margin-top: 5px;}
+.gl_tit{position: absolute; left: 125px; background: url(../img/logo.png) no-repeat; background-size: 40px 40px; padding-left: 40px; height: 40px; line-height: 40px; font-size: 16px;}
+.gl_header .gl_exit{right: 15px; top:18px}
+.gl_exit button{background: #a5c8ee; border: 1px solid #74aae6; color: #194f8b; border-radius: 3px; padding: 2px;}
+/*底部导航*/
+.gl_footer_wrapper{
+	position: fixed;
+	width:100%;
+	left: 0;
+	bottom: 0px;
+	z-index: 9999;
+}
+.gl_footer>div{float: left; text-align: center; width: 20%; margin-top: 8px;}
+.gl_footer>div>i{display: block; font-size: 23px;}
+.gl_footer .f_bbs i{font-size: 25px;}
+.gl_footer .f_user i{font-size: 24px;}
+.gl_footer .f_menu a{background: #478ede; width: 30px;  display: block;margin: 0 auto;  font-size: 26px;  line-height: 0; height: 30px; padding-top: 12px; color: #fff; border-radius: 5px; margin-top:5px ;}
+
+.gl_test_menu{width: 100%; position: relative; top: 55px; }
